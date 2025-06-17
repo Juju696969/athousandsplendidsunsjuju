@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Thousand Splendid Suns by Khaled Hosseini - Official Book Website</title>
+    <meta name="description" content="Discover Khaled Hosseini's masterpiece A Thousand Splendid Suns - an unforgettable story of friendship, resilience, and hope set in Afghanistan. Read reviews, author biography, and buy the book.">
+    <meta name="keywords" content="A Thousand Splendid Suns, Khaled Hosseini, Afghanistan literature, women's rights, historical fiction, bestselling novel, book review, Afghan culture, resilience, friendship">
+
+    <meta property="og:title" content="A Thousand Splendid Suns by Khaled Hosseini">
+    <meta property="og:description" content="An unforgettable story of friendship, resilience, and hope set in Afghanistan">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background: linear-gradient(to bottom, #fffbeb, #fed7aa);
+        }
+        
+        .font-serif {
+            font-family: 'Crimson Text', serif;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #6b7280;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: #d97706;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(139, 21, 56, 0.7), rgba(212, 175, 55, 0.6)), url('https://images.pexels.com/photos/1320704/pexels-photo-1320704.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 3rem;
+            max-width: 64rem;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        
+        .hero .subtitle {
+            color: #fde047;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .star {
+            color: #fbbf24;
+            fill: currentColor;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1.125rem;
+        }
+        
+        .btn-primary {
+            background: #d97706;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #b45309;
+            transform: scale(1.05);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin-left: 1rem;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            color: #6b7280;
+            max-width: 48rem;
+            margin: 0 auto 4rem;
+        }
+        
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .grid-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .card-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        /* Book Overview */
+        .book-overview {
+            background: linear-gradient(to bottom, white, #fffbeb);
+        }
+        
+        .book-image {
+            width: 100%;
+            height: 60rem;
+            object-fit: fill;
+            border-radius: 1rem;
+        }
+        
+        /* Author Section */
+        .author-section {
+            background: white;
+        }
+        
+        .author-image {
+            width: 100%;
+            height: 60rem;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        
+        .author-quote {
+            background: linear-gradient(to right, #d97706, #ea580c);
+            color: white;
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .author-quote blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+        
+        .tag-yellow {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .tag-blue {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .tag-green {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        /* Reviews Section */
+        .reviews-section {
+            background: linear-gradient(to bottom, #fffbeb, #fed7aa);
+        }
+        
+        .review-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .reviewer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .reviewer-avatar {
+            width: 2rem;
+            height: 2rem;
+            background: #f3f4f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.75rem;
+        }
+        
+        .verified-badge {
+            background: #d1fae5;
+            color: #065f46;
+            font-size: 0.75rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 9999px;
+            margin-left: auto;
+        }
+        
+        /* Purchase Section */
+        .purchase-section {
+            background: linear-gradient(to bottom, white, #fffbeb);
+        }
+        
+        .price-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .price-card.popular {
+            border: 2px solid #fbbf24;
+            transform: scale(1.05);
+        }
+        
+        .badge {
+            position: absolute;
+            top: -0.75rem;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .badge-bestseller {
+            background: #ef4444;
+        }
+        
+        .badge-popular {
+            background: #eab308;
+        }
+        
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .original-price {
+            font-size: 1.125rem;
+            color: #6b7280;
+            text-decoration: line-through;
+            margin-left: 0.5rem;
+        }
+        
+        .savings {
+            color: #059669;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        
+        .feature-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background: #fbbf24;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .footer h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .footer a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .footer a:hover {
+            color: #fbbf24;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            background: #374151;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: background 0.2s;
+        }
+        
+        .social-link:hover {
+            background: #4b5563;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content {
+                padding: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .grid-2,
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Utility classes */
+        .text-center { text-align: center; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-8 { margin-top: 2rem; }
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .gap-4 { gap: 1rem; }
+        .w-full { width: 100%; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i data-lucide="book"></i>
+                <span class="font-serif">A Thousand Splendid Suns</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#overview">The Book</a></li>
+                <li><a href="#author">Author</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#purchase">Buy Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="font-serif">
+                A Thousand
+                <span class="subtitle">Splendid Suns</span>
+            </h1>
+            <p class="font-serif" style="font-size: 1.5rem; margin-bottom: 0.5rem;">by Khaled Hosseini</p>
+            
+            <div class="rating">
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <span style="margin-left: 0.5rem; font-size: 1.125rem;">4.8/5 • New York Times Bestseller</span>
+            </div>
+            
+            <p style="max-width: 32rem; margin: 0 auto 2rem;">
+                An unforgettable story of friendship between two women, set against the tumultuous backdrop of Afghanistan's history. A tale of resilience, hope, and the enduring power of love.
+            </p>
+            
+            <div>
+                <a href="#overview" class="btn btn-primary">Discover the Story</a>
+                <a href="#purchase" class="btn btn-secondary">Buy Now</a>
+            </div>
+            
+            <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 0.875rem; opacity: 0.8;">
+                <div class="flex items-center gap-4">
+                    <i data-lucide="award" style="width: 1rem; height: 1rem;"></i>
+                    <span>Goodreads Choice Award</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i data-lucide="award" style="width: 1rem; height: 1rem;"></i>
+                    <span>Amazon Best Book</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i data-lucide="award" style="width: 1rem; height: 1rem;"></i>
+                    <span>International Bestseller</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Overview -->
+    <section id="overview" class="section book-overview">
+        <div class="container">
+            <h2 class="section-title font-serif">A Story of Unbreakable Bonds</h2>
+            <p class="section-subtitle">
+                Set against the volatile events of Afghanistan's tumultuous history, from the Soviet invasion to the reign of the Taliban to post-Taliban rebuilding
+            </p>
+            
+            <div class="grid grid-2 mb-8" style="align-items: center;">
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/81xIPfJ6iUL._SL1500_.jpg" alt="Afghan landscape" class="book-image">
+                </div>
+                <div>
+                    <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem; color: #1f2937;">The Heart of Afghanistan</h3>
+                    <p style="margin-bottom: 1.5rem; color: #6b7280; font-size: 1.125rem; line-height: 1.6;">
+                        Through the lives of Mariam and Laila, two women born a generation apart, Hosseini creates a rich tapestry of family and friendship, of mothers and daughters, in a land torn by war, rocked by social upheaval, and scarred by the repression of women.
+                    </p>
+                    <p style="color: #6b7280; font-size: 1.125rem; line-height: 1.6;">
+                        This is a story of resilience, of quiet heroism, and of the extraordinary lengths to which ordinary people will go to protect the ones they love.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-3 mb-8">
+                <div class="card">
+                    <div class="card-icon" style="background: #fef2f2;">
+                        <i data-lucide="heart" style="color: #ef4444;"></i>
+                    </div>
+                    <h3 class="font-serif">Emotional Journey</h3>
+                    <p>A deeply moving exploration of love, sacrifice, and the unbreakable bonds between mothers and daughters, wives and husbands.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon" style="background: #eff6ff;">
+                        <i data-lucide="globe" style="color: #3b82f6;"></i>
+                    </div>
+                    <h3 class="font-serif">Historical Depth</h3>
+                    <p>Set against thirty years of Afghan history, from the Soviet occupation through the rise and fall of the Taliban.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon" style="background: #f0fdf4;">
+                        <i data-lucide="users" style="color: #22c55e;"></i>
+                    </div>
+                    <h3 class="font-serif">Universal Themes</h3>
+                    <p>Themes of friendship, resilience, and hope that resonate across cultures and generations, making it a truly universal story.</p>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(to right, #fef3c7, #fed7aa); border-radius: 1rem; padding: 3rem;">
+                <div class="flex" style="align-items: flex-start; gap: 1rem;">
+                    <i data-lucide="book-open" style="color: #d97706; width: 3rem; height: 3rem; margin-top: 0.5rem; flex-shrink: 0;"></i>
+                    <div>
+                        <h3 class="font-serif" style="font-size: 1.5rem; margin-bottom: 1rem; color: #1f2937;">"A Story That Will Stay With You Forever"</h3>
+                        <p style="color: #374151; font-size: 1.125rem; line-height: 1.6; margin-bottom: 1rem;">
+                            Hosseini masterfully weaves together the stories of Mariam, a young woman whose life is shaped by the harsh realities of her time, and Laila, born into a more hopeful world that is quickly shattered by war. Their unlikely friendship becomes a testament to the enduring power of female solidarity and the lengths to which people will go to protect those they love.
+                        </p>
+                        <p style="color: #374151; font-size: 1.125rem; line-height: 1.6;">
+                            With stunning prose and unforgettable characters, "A Thousand Splendid Suns" illuminates the grace, resilience, and quiet heroism of Afghan women, creating a portrait that is both intimate and sweeping in its historical scope.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="section author-section">
+        <div class="container">
+            <h2 class="section-title font-serif">About Khaled Hosseini</h2>
+            <p class="section-subtitle">Master storyteller and humanitarian, bringing Afghan stories to the world</p>
+            
+            <div class="grid grid-2 mb-8" style="align-items: center;">
+                <div>
+                    <img src="https://ew.com/thmb/eFYgEoTi0odf_QsCzwjdtkyVcoY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/khaled-hosseini-1-2000-60b47db3e08e482d958b0625fa2271ab.jpg" alt="Author portrait" class="author-image">
+                </div>
+                <div>
+                    <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem; color: #1f2937;">A Voice for Afghanistan</h3>
+                    <p style="margin-bottom: 1.5rem; color: #6b7280; font-size: 1.125rem; line-height: 1.6;">
+                        Khaled Hosseini was born in Kabul, Afghanistan, in 1965. His family moved to the United States in 1980, and he became a citizen in 1989. He graduated from college in 1988 and earned a medical degree in 1993. He practiced medicine for over ten years, until a year and a half after the publication of The Kite Runner.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; color: #6b7280; font-size: 1.125rem; line-height: 1.6;">
+                        Hosseini is also a Goodwill Envoy to the UN Refugee Agency, UNHCR, and the founder of The Khaled Hosseini Foundation, a nonprofit organization which provides humanitarian assistance to the people of Afghanistan.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <span class="tag tag-yellow">New York Times Bestselling Author</span>
+                        <span class="tag tag-blue">UNHCR Goodwill Envoy</span>
+                        <span class="tag tag-green">Humanitarian</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-4 mb-8">
+                <div class="card text-center">
+                    <div class="card-icon" style="background: #fef3c7; margin: 0 auto;">
+                        <i data-lucide="book-open" style="color: #d97706;"></i>
+                    </div>
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Published Works</h4>
+                    <p style="font-size: 0.875rem;">Three internationally acclaimed novels</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon" style="background: #dbeafe; margin: 0 auto;">
+                        <i data-lucide="globe" style="color: #3b82f6;"></i>
+                    </div>
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Global Reach</h4>
+                    <p style="font-size: 0.875rem;">Translated into 70+ languages</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon" style="background: #d1fae5; margin: 0 auto;">
+                        <i data-lucide="users" style="color: #22c55e;"></i>
+                    </div>
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Readers Worldwide</h4>
+                    <p style="font-size: 0.875rem;">Millions of copies sold globally</p>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-icon" style="background: #fae8ff; margin: 0 auto;">
+                        <i data-lucide="award" style="color: #a855f7;"></i>
+                    </div>
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Recognition</h4>
+                    <p style="font-size: 0.875rem;">Numerous literary awards</p>
+                </div>
+            </div>
+            
+            <div class="author-quote">
+                <blockquote class="font-serif">
+                    "I write about the country I remember, the Afghanistan of my childhood. But more than that, I write about the universal human experiences that transcend geographical and cultural boundaries."
+                </blockquote>
+                <cite style="font-size: 1.125rem; font-weight: 600;">— Khaled Hosseini</cite>
+            </div>
+            
+            <div class="grid grid-3 mt-8">
+                <div class="card">
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.75rem;">The Kite Runner (2003)</h4>
+                    <p style="font-size: 0.875rem;">His debut novel that introduced the world to Afghan literature and became an international phenomenon.</p>
+                </div>
+                
+                <div class="card" style="background: #fffbeb; border: 2px solid #fde047;">
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.75rem;">A Thousand Splendid Suns (2007)</h4>
+                    <p style="font-size: 0.875rem;">A powerful story focusing on women's experiences in Afghanistan, cementing his reputation as a master storyteller.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.75rem;">And the Mountains Echoed (2013)</h4>
+                    <p style="font-size: 0.875rem;">A multi-generational family saga that spans continents and explores the ways in which we love, betray, and sacrifice for one another.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <h2 class="section-title font-serif">Critical Acclaim & Reader Love</h2>
+            <div class="rating justify-center mb-4">
+                <i data-lucide="star" class="star" style="width: 2rem; height: 2rem;"></i>
+                <i data-lucide="star" class="star" style="width: 2rem; height: 2rem;"></i>
+                <i data-lucide="star" class="star" style="width: 2rem; height: 2rem;"></i>
+                <i data-lucide="star" class="star" style="width: 2rem; height: 2rem;"></i>
+                <i data-lucide="star" class="star" style="width: 2rem; height: 2rem;"></i>
+                <span style="font-size: 1.5rem; font-weight: 600; color: #374151; margin-left: 0.75rem;">4.8/5 Average Rating</span>
+            </div>
+            <p class="section-subtitle">Praised by critics and beloved by readers worldwide</p>
+            
+            <!-- Professional Reviews -->
+            <h3 class="font-serif text-center mb-8" style="font-size: 2rem; color: #1f2937;">Professional Reviews</h3>
+            <div class="grid grid-3 mb-8">
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="newspaper" style="color: #3b82f6; margin-right: 0.5rem;"></i>
+                        <h4 style="font-weight: 600; color: #1f2937;">The New York Times</h4>
+                    </div>
+                    <i data-lucide="quote" style="color: #d97706; margin-bottom: 0.5rem;"></i>
+                    <p style="color: #6b7280; font-style: italic; line-height: 1.6;">
+                        "Hosseini has created two strong female protagonists... The result is a powerful, harrowing depiction of Afghanistan, and an enlightening, dramatic work of contemporary literary fiction."
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="book-open" style="color: #22c55e; margin-right: 0.5rem;"></i>
+                        <h4 style="font-weight: 600; color: #1f2937;">The Washington Post</h4>
+                    </div>
+                    <i data-lucide="quote" style="color: #d97706; margin-bottom: 0.5rem;"></i>
+                    <p style="color: #6b7280; font-style: italic; line-height: 1.6;">
+                        "A masterwork of powerful emotion and insight... Hosseini's writing makes every emotion, every scene, even the most painful, beautiful to behold."
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="award" style="color: #a855f7; margin-right: 0.5rem;"></i>
+                        <h4 style="font-weight: 600; color: #1f2937;">People Magazine</h4>
+                    </div>
+                    <i data-lucide="quote" style="color: #d97706; margin-bottom: 0.5rem;"></i>
+                    <p style="color: #6b7280; font-style: italic; line-height: 1.6;">
+                        "Devastating... a beautiful, agonizing symphony... This is a story that will stay with you long after you've turned the final page."
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Reader Reviews -->
+            <h3 class="font-serif text-center mb-8" style="font-size: 2rem; color: #1f2937;">What Readers Are Saying</h3>
+            <div class="grid grid-3 mb-8">
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i data-lucide="user" style="color: #6b7280; width: 1rem; height: 1rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-weight: 600; color: #1f2937; font-size: 0.875rem;">Sarah Mitchell</h4>
+                            <p style="color: #6b7280; font-size: 0.75rem;">New York, NY</p>
+                        </div>
+                        <span class="verified-badge">Verified</span>
+                    </div>
+                    <div class="rating mb-4">
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                    </div>
+                    <p style="color: #6b7280; line-height: 1.6; font-size: 0.875rem;">
+                        "This book completely transformed my understanding of Afghanistan and its people. Mariam and Laila's story is both heartbreaking and inspiring. I couldn't put it down."
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i data-lucide="user" style="color: #6b7280; width: 1rem; height: 1rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-weight: 600; color: #1f2937; font-size: 0.875rem;">Michael Chen</h4>
+                            <p style="color: #6b7280; font-size: 0.75rem;">San Francisco, CA</p>
+                        </div>
+                        <span class="verified-badge">Verified</span>
+                    </div>
+                    <div class="rating mb-4">
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                    </div>
+                    <p style="color: #6b7280; line-height: 1.6; font-size: 0.875rem;">
+                        "Hosseini's ability to weave historical events with personal stories is unmatched. This book made me laugh, cry, and feel every emotion in between. Absolutely incredible."
+                    </p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i data-lucide="user" style="color: #6b7280; width: 1rem; height: 1rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-weight: 600; color: #1f2937; font-size: 0.875rem;">Emily Rodriguez</h4>
+                            <p style="color: #6b7280; font-size: 0.75rem;">Austin, TX</p>
+                        </div>
+                        <span class="verified-badge">Verified</span>
+                    </div>
+                    <div class="rating mb-4">
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                        <i data-lucide="star" class="star" style="width: 1rem; height: 1rem;"></i>
+                    </div>
+                    <p style="color: #6b7280; line-height: 1.6; font-size: 0.875rem;">
+                        "I've read this book three times and discover something new each time. The bond between the two women is so beautifully portrayed. A true masterpiece of literature."
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Awards Section -->
+            <div style="background: linear-gradient(to right, #d97706, #ea580c); border-radius: 1rem; padding: 3rem; color: white; text-align: center;">
+                <i data-lucide="award" style="width: 4rem; height: 4rem; margin: 0 auto 1.5rem; display: block;"></i>
+                <h3 class="font-serif mb-6" style="font-size: 2rem;">Awards & Recognition</h3>
+                <div class="grid grid-4">
+                    <div class="text-center">
+                        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 1rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem; font-weight: bold;">4.8/5</span>
+                        </div>
+                        <p style="font-size: 0.875rem;">Goodreads Rating</p>
+                    </div>
+                    <div class="text-center">
+                        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 1rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem; font-weight: bold;">#1</span>
+                        </div>
+                        <p style="font-size: 0.875rem;">NY Times Bestseller</p>
+                    </div>
+                    <div class="text-center">
+                        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 1rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem; font-weight: bold;">70+</span>
+                        </div>
+                        <p style="font-size: 0.875rem;">Languages Translated</p>
+                    </div>
+                    <div class="text-center">
+                        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 1rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem; font-weight: bold;">10M+</span>
+                        </div>
+                        <p style="font-size: 0.875rem;">Copies Sold</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Gallery -->
+<section id="media" class="section" style="background: white;">
+  <div class="container">
+    <h2 class="section-title font-serif">Media & Extras</h2>
+    <p class="section-subtitle">Explore videos, interviews, and visual content that brings the story to life</p>
+
+    <div class="grid grid-3 mb-8">
+      <!-- Author Interview -->
+      <div class="card" style="cursor: pointer; overflow: hidden;">
+        <div style="position: relative;">
+          <img src="https://images.pexels.com/photos/3153207/pexels-photo-3153207.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Author Interview" style="width: 100%; height: 12rem; object-fit: cover; border-radius: 0.5rem;">
+          <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: 50%; padding: 0.5rem;">
+            <i data-lucide="video" style="width: 1.5rem; height: 1.5rem;"></i>
+          </div>
+        </div>
+        <div style="padding: 1.5rem 0;">
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Author Interview: The Story Behind the Book</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Khaled Hosseini discusses the inspiration and writing process</p>
+          <div style="margin-top: 1rem;">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/2oWstZMSMVo?si=b6glpTXh6zINkQcH" title="Author Interview" allowfullscreen style="border-radius: 0.5rem;"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book Trailer -->
+      <div class="card" style="cursor: pointer; overflow: hidden;">
+        <div style="position: relative;">
+          <img src="https://images.pexels.com/photos/1181564/pexels-photo-1181564.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Book Trailer" style="width: 100%; height: 12rem; object-fit: cover; border-radius: 0.5rem;">
+          <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: 50%; padding: 0.5rem;">
+            <i data-lucide="video" style="width: 1.5rem; height: 1.5rem;"></i>
+          </div>
+        </div>
+        <div style="padding: 1.5rem 0;">
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Book Trailer: A Thousand Splendid Suns</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Official book trailer showcasing the story</p>
+          <div style="margin-top: 1rem;">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/Ou8sNWreLls?si=h9T8IZ7pkVoBZ3-R" title="Book Trailer" allowfullscreen style="border-radius: 0.5rem;"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audiobook Sample -->
+      <div class="card" style="cursor: pointer; overflow: hidden;">
+        <div style="position: relative;">
+          <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Audiobook Sample" style="width: 100%; height: 12rem; object-fit: cover; border-radius: 0.5rem;">
+          <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: 50%; padding: 0.5rem;">
+            <i data-lucide="headphones" style="width: 1.5rem; height: 1.5rem;"></i>
+          </div>
+        </div>
+        <div style="padding: 1.5rem 0;">
+          <h3 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.5rem;">Audiobook Sample</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Listen to the opening chapter narration</p>
+          <div style="margin-top: 1rem;">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/V_phOUrE6eA?si=sxpp_sU7I35QIr4B" title="Audiobook Sample" allowfullscreen style="border-radius: 0.5rem;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                        <!-- Featured Content -->
+            <div style="background: linear-gradient(to right, #fef3c7, #fed7aa); border-radius: 1rem; padding: 3rem;">
+                <div class="text-center mb-8">
+                    <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem; color: #1f2937;">Featured Content</h3>
+                    <p style="color: #6b7280; max-width: 32rem; margin: 0 auto;">
+                        Dive deeper into the world of "A Thousand Splendid Suns" with exclusive content and behind-the-scenes materials
+                    </p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1f2937;">Author's Reading Guide</h4>
+                        <p style="color: #6b7280; margin-bottom: 1rem;">
+                            Explore discussion questions and themes directly from Khaled Hosseini to enhance your reading experience.
+                        </p>
+                        <a href="#" style="color: #d97706; font-weight: 600; text-decoration: none; display: flex; align-items: center;">
+                            Download PDF <i data-lucide="external-link" style="width: 1rem; height: 1rem; margin-left: 0.25rem;"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 class="font-serif" style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #1f2937;">Historical Context Guide</h4>
+                        <p style="color: #6b7280; margin-bottom: 1rem;">
+                            Understand the historical events that shaped the story with this comprehensive timeline and cultural guide.
+                        </p>
+                        <a href="#" style="color: #d97706; font-weight: 600; text-decoration: none; display: flex; align-items: center;">
+                            Explore Timeline <i data-lucide="external-link" style="width: 1rem; height: 1rem; margin-left: 0.25rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section id="purchase" class="section purchase-section">
+        <div class="container">
+            <h2 class="section-title font-serif">Get Your Copy Today</h2>
+            <div class="rating justify-center mb-4">
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <i data-lucide="star" class="star"></i>
+                <span style="font-size: 1.125rem; color: #6b7280; margin-left: 0.5rem;">Over 10 million copies sold worldwide</span>
+            </div>
+            <p class="section-subtitle">Choose your preferred format and start reading this unforgettable story today</p>
+            
+            <div class="grid grid-4 mb-8">
+                <!-- Hardcover -->
+                <div class="price-card">
+                    <div class="badge badge-bestseller">Bestseller</div>
+                    <div class="flex items-center mb-4">
+                        <div style="background: #fef3c7; padding: 0.5rem; border-radius: 0.5rem; margin-right: 0.75rem;">
+                            <i data-lucide="book-open" style="width: 1.5rem; height: 1.5rem;"></i>
+                        </div>
+                        <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 600;">Hardcover</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-baseline">
+                            <span class="price">₹1,299</span>
+                            <span class="original-price">₹2,199</span>
+                        </div>
+                        <p class="savings">Save 41%</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li><div class="feature-dot"></div>Premium binding</li>
+                        <li><div class="feature-dot"></div>Collectible edition</li>
+                        <li><div class="feature-dot"></div>Free shipping</li>
+                    </ul>
+                    <a href="https://amazon.in/dp/B000UDUX5S" target="_blank" class="btn" style="width: 100%; background: #1f2937; color: white; text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="shopping-cart" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;"></i>
+                        Buy on Amazon India
+                    </a>
+                </div>
+                
+                <!-- Paperback -->
+                <div class="price-card popular">
+                    <div class="badge badge-popular">Most Popular</div>
+                    <div class="flex items-center mb-4">
+                        <div style="background: #fef3c7; padding: 0.5rem; border-radius: 0.5rem; margin-right: 0.75rem;">
+                            <i data-lucide="book-open" style="width: 1.5rem; height: 1.5rem;"></i>
+                        </div>
+                        <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 600;">Paperback</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-baseline">
+                            <span class="price">₹999</span>
+                            <span class="original-price">₹1,399</span>
+                        </div>
+                        <p class="savings">Save 29%</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li><div class="feature-dot"></div>Portable format</li>
+                        <li><div class="feature-dot"></div>Same great content</li>
+                        <li><div class="feature-dot"></div>Perfect for travel</li>
+                    </ul>
+                    <a href="https://amazon.in/dp/B000UDUX5S" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="shopping-cart" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;"></i>
+                        Buy on Amazon India
+                    </a>
+                </div>
+                
+                <!-- Kindle Edition -->
+                <div class="price-card">
+                    <div class="flex items-center mb-4">
+                        <div style="background: #fef3c7; padding: 0.5rem; border-radius: 0.5rem; margin-right: 0.75rem;">
+                            <i data-lucide="tablet" style="width: 1.5rem; height: 1.5rem;"></i>
+                        </div>
+                        <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 600;">Kindle Edition</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-baseline">
+                            <span class="price">₹799</span>
+                            <span class="original-price">₹1,199</span>
+                        </div>
+                        <p class="savings">Save 33%</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li><div class="feature-dot"></div>Instant download</li>
+                        <li><div class="feature-dot"></div>Adjustable text</li>
+                        <li><div class="feature-dot"></div>Highlight & notes</li>
+                    </ul>
+                    <a href="https://amazon.in/dp/B000UDUX5S" target="_blank" class="btn" style="width: 100%; background: #1f2937; color: white; text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="shopping-cart" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;"></i>
+                        Buy on Amazon India
+                    </a>
+                </div>
+                
+                <!-- Audiobook -->
+                <div class="price-card">
+                    <div class="flex items-center mb-4">
+                        <div style="background: #fef3c7; padding: 0.5rem; border-radius: 0.5rem; margin-right: 0.75rem;">
+                            <i data-lucide="headphones" style="width: 1.5rem; height: 1.5rem;"></i>
+                        </div>
+                        <h3 class="font-serif" style="font-size: 1.25rem; font-weight: 600;">Audiobook</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-baseline">
+                            <span class="price">₹1,599</span>
+                            <span class="original-price">₹2,399</span>
+                        </div>
+                        <p class="savings">Save 33%</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li><div class="feature-dot"></div>Professional narration</li>
+                        <li><div class="feature-dot"></div>12+ hours</li>
+                        <li><div class="feature-dot"></div>Perfect for commuting</li>
+                    </ul>
+                    <a href="https://amazon.in/dp/B000UDUX5S" target="_blank" class="btn" style="width: 100%; background: #1f2937; color: white; text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="shopping-cart" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;"></i>
+                        Buy on Amazon India
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Special Offers -->
+            <div style="background: linear-gradient(to right, #d97706, #ea580c); border-radius: 1rem; padding: 3rem; color: white; margin-bottom: 3rem;">
+                <div class="text-center mb-8">
+                    <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1rem;">Special Limited-Time Offers</h3>
+                    <p style="font-size: 1.25rem; opacity: 0.9;">Don't miss these exclusive deals on Khaled Hosseini's masterpiece</p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.5rem;">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="truck" style="width: 2rem; height: 2rem; margin-right: 0.75rem;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: 600;">Free Shipping</h4>
+                        </div>
+                        <p style="opacity: 0.9; margin-bottom: 1rem;">
+                            Get free shipping on all orders over ₹499. Perfect for bundling with other books from the author.
+                        </p>
+                        <div style="font-size: 0.875rem; opacity: 0.75;">
+                            *Limited time offer. Standard shipping rates apply to orders under ₹499.
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.5rem;">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="book-open" style="width: 2rem; height: 2rem; margin-right: 0.75rem;"></i>
+                            <h4 style="font-size: 1.25rem; font-weight: 600;">Bundle Deal</h4>
+                        </div>
+                        <p style="opacity: 0.9; margin-bottom: 1rem;">
+                            Buy "A Thousand Splendid Suns" with "The Kite Runner" and save 25% on your total order.
+                        </p>
+                        <div style="font-size: 0.875rem; opacity: 0.75;">
+                            *Bundle pricing available for physical books only.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="text-center">
+                <h3 class="font-serif" style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #1f2937;">Why Choose Amazon India?</h3>
+                <div class="grid grid-4">
+                    <div class="text-center">
+                        <div style="background: #d1fae5; border-radius: 50%; padding: 1rem; width: 4rem; height: 4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                            <i data-lucide="truck" style="color: #059669; width: 2rem; height: 2rem;"></i>
+                        </div>
+                        <h4 style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Fast Delivery</h4>
+                        <p style="font-size: 0.875rem; color: #6b7280;">Prime members get free same-day delivery</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div style="background: #dbeafe; border-radius: 50%; padding: 1rem; width: 4rem; height: 4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                            <i data-lucide="star" style="color: #3b82f6; width: 2rem; height: 2rem;"></i>
+                        </div>
+                        <h4 style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Trusted Reviews</h4>
+                        <p style="font-size: 0.875rem; color: #6b7280;">Read thousands of verified customer reviews</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div style="background: #fae8ff; border-radius: 50%; padding: 1rem; width: 4rem; height: 4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                            <i data-lucide="shopping-cart" style="color: #a855f7; width: 2rem; height: 2rem;"></i>
+                        </div>
+                        <h4 style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Easy Returns</h4>
+                        <p style="font-size: 0.875rem; color: #6b7280;">30-day return policy for your peace of mind</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div style="background: #fed7aa; border-radius: 50%; padding: 1rem; width: 4rem; height: 4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                            <i data-lucide="book-open" style="color: #ea580c; width: 2rem; height: 2rem;"></i>
+                        </div>
+                        <h4 style="font-weight: 600; color: #1f2937; margin-bottom: 0.5rem;">Multiple Formats</h4>
+                        <p style="font-size: 0.875rem; color: #6b7280;">Choose from print, digital, or audio formats</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4 mb-8">
+                <!-- Brand Section -->
+                <div style="grid-column: span 2;">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i data-lucide="book" style="width: 2rem; height: 2rem; color: #fbbf24;"></i>
+                        <span class="font-serif" style="font-size: 1.5rem; font-weight: 600;">A Thousand Splendid Suns</span>
+                    </div>
+                    <p style="color: #d1d5db; font-size: 1.125rem; margin-bottom: 1rem; max-width: 24rem;">
+                        An unforgettable story of friendship, resilience, and hope that transcends borders and generations.
+                    </p>
+                    <p style="color: #9ca3af; font-size: 0.875rem; margin-bottom: 1.5rem;">
+                        "A luminous, heartbreaking novel that depicts the human cost of political upheaval." - The New York Times
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-lucide="facebook" style="width: 1.25rem; height: 1.25rem;"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="twitter" style="width: 1.25rem; height: 1.25rem;"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram" style="width: 1.25rem; height: 1.25rem;"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="youtube" style="width: 1.25rem; height: 1.25rem;"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="footer h3">Explore</h3>
+                    <ul style="list-style: none; space-y: 0.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#overview">About the Book</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#author">About the Author</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#reviews">Reviews</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#media">Media Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Purchase Links -->
+                <div>
+                    <h3 class="footer h3">Get the Book</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;"><a href="https://amazon.in/dp/B000UDUX5S" target="_blank">Amazon India</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Flipkart</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Local Bookstores</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#">Audiobook</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Author's Other Works -->
+            <div style="border-top: 1px solid #374151; padding-top: 2rem; margin-bottom: 2rem;">
+                <h3 class="font-serif text-center mb-6" style="font-size: 1.5rem;">Other Works by Khaled Hosseini</h3>
+                <div class="grid grid-2">
+                    <div style="background: #374151; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: #d97706; width: 3rem; height: 4rem; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="book" style="width: 1.5rem; height: 1.5rem; color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif" style="font-size: 1.125rem; font-weight: 600; color: #fbbf24;">The Kite Runner</h4>
+                            <p style="color: #d1d5db; font-size: 0.875rem;">His groundbreaking debut novel</p>
+                        </div>
+                    </div>
+                    <div style="background: #374151; border-radius: 0.5rem; padding: 1rem; display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: #d97706; width: 3rem; height: 4rem; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="book" style="width: 1.5rem; height: 1.5rem; color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif" style="font-size: 1.125rem; font-weight: 600; color: #fbbf24;">And the Mountains Echoed</h4>
+                            <p style="color: #d1d5db; font-size: 0.875rem;">A multi-generational family saga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div style="border-top: 1px solid #374151; padding-top: 2rem;">
+                <div class="flex justify-between items-center" style="flex-wrap: wrap; gap: 1rem;">
+                    <div class="flex items-center gap-4">
+                        <i data-lucide="globe" style="width: 1.25rem; height: 1.25rem; color: #fbbf24;"></i>
+                        <span style="color: #d1d5db;">Available in 70+ languages worldwide</span>
+                    </div>
+                    <div class="flex items-center gap-4" style="font-size: 0.875rem; color: #9ca3af;">
+                        <span>© 2025 Literary Tribute Site</span>
+                        <span>•</span>
+                        <span>Educational Purpose</span>
+                        <span>•</span>
+                        <div class="flex items-center gap-4">
+                            <span>Made with</span>
+                            <i data-lucide="heart" style="width: 1rem; height: 1rem; color: #ef4444;"></i>
+                            <span>for Literature</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = ['home', 'overview', 'author', 'reviews', 'media', 'purchase'];
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                const navLink = document.querySelector(`a[href="#${section}"]`);
+                
+                if (element && navLink) {
+                    const offsetTop = element.offsetTop;
+                    const offsetHeight = element.offsetHeight;
+                    
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        // Remove active class from all nav links
+                        document.querySelectorAll('.nav-links a').forEach(link => {
+                            link.style.color = '#6b7280';
+                            link.style.borderBottom = 'none';
+                        });
+                        
+                        // Add active class to current nav link
+                        navLink.style.color = '#d97706';
+                        navLink.style.borderBottom = '2px solid #d97706';
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- JSON-LD Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "A Thousand Splendid Suns - Official Tribute",
+  "url": "https://yourwebsite.com/a-thousand-splendid-suns",
+  "about": {
+    "@type": "Book",
+    "name": "A Thousand Splendid Suns",
+    "author": {
+      "@type": "Person",
+      "name": "Khaled Hosseini",
+      "url": "https://khaledhosseini.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Penguin Random House"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yourwebsite.com/a-thousand-splendid-suns"
+  }
+}
+</script>
+
+<!-- Backlinks Section with Icons -->
+<section id="backlinks" style="background-color: #f8f1e9; padding: 40px 20px;">
+  <div style="max-width: 960px; margin: auto;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 20px; color: #3e2f2f;">
+      🌐 Explore More
+    </h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li style="display: flex; align-items: center; margin-bottom: 12px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1V_9eEQXOsQ5QYfCYs1XyHgFtl1AIqtGYiA&s" alt="Khaled Hosseini" style="width: 24px; height: 24px; margin-right: 10px;">
+        <a href="https://khaledhosseini.com/" target="_blank" style="color: #a65d03; text-decoration: none;">
+          Khaled Hosseini – Official Website
+        </a>
+      </li>
+      <li style="display: flex; align-items: center; margin-bottom: 12px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Goodreads_%27g%27_logo.svg" alt="Goodreads" style="width: 24px; height: 24px; margin-right: 10px;">
+        <a href="https://www.goodreads.com/book/show/128029.A_Thousand_Splendid_Suns" target="_blank" style="color: #a65d03; text-decoration: none;">
+          Goodreads – Reviews & Ratings
+        </a>
+      </li>
+      <li style="display: flex; align-items: center; margin-bottom: 12px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc0L9pU1IjqhK0u8GC0kQBXDB2sj_nd4UDVQ&s" alt="Amazon" style="width: 24px; height: 24px; margin-right: 10px;">
+        <a href="https://www.amazon.in/Thousand-Splendid-Suns-Khaled-Hosseini/dp/1408844443" target="_blank" style="color: #a65d03; text-decoration: none;">
+          Amazon – Buy the Book
+        </a>
+      </li>
+      <li style="display: flex; align-items: center; margin-bottom: 12px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZSWIEO0Dfl8dhMQDCo3rJ_5ZDb60ovhoUw&s" alt="Wikipedia" style="width: 24px; height: 24px; margin-right: 10px;">
+        <a href="https://en.wikipedia.org/wiki/A_Thousand_Splendid_Suns" target="_blank" style="color: #a65d03; text-decoration: none;">
+          Wikipedia – Book Overview
+        </a>
+      </li>
+      <li style="display: flex; align-items: center; margin-bottom: 12px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISYDAdEO2WKK5QMRAKnlX5xknCjem6GsxyQ&s" alt="Penguin Random House" style="width: 24px; height: 24px; margin-right: 10px;">
+        <a href="https://www.penguinrandomhouse.com/books/88167/a-thousand-splendid-suns-by-khaled-hosseini/" target="_blank" style="color: #a65d03; text-decoration: none;">
+          Penguin Random House – Publisher Page
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
